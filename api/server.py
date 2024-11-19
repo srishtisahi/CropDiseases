@@ -1,10 +1,13 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import tensorflow as tf
 import numpy as np
 from PIL import Image
 import io
 
 app = Flask(__name__)
+# Enable CORS for all routes
+CORS(app, supports_credentials=True)
 
 # Constants (matching diseases.py)
 IMG_HEIGHT = 224
