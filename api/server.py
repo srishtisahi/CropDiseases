@@ -7,7 +7,7 @@ import io
 
 app = Flask(__name__)
 # Enable CORS for all routes
-CORS(app, supports_credentials=True, origins=["https://crop-diseases.vercel.app/"])
+CORS(app, supports_credentials=True, origins="*")
 
 # Constants (matching diseases.py)
 IMG_HEIGHT = 224
