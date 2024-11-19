@@ -92,7 +92,6 @@ export default function CropDiseaseDetector() {
               'Content-Type': 'application/json',
               'Accept': 'application/json',
             },
-            credentials: 'include',
             body: JSON.stringify({ matrix }),
           })
 
